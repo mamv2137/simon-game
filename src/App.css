@@ -1,22 +1,83 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #09d3ac;
+.title {
+  height: 20vh;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.game {
+  height: 500px;
+  width: 500px;
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tiles {
+  width: 45%;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.tile--red {
+  background-color: #B72F1D;
+}
+.tile--red:hover {
+  background-color: #ED6A5A;
+  filter: blur(10px);
+}
+
+.tile--blue {
+  background-color: #8DA2C1;
+}
+.tile--blue:hover {
+  background-color: #83A6DB;
+  filter: blur(10px);
+}
+.tile--yellow {
+  background-color: #B7B58D;
+}
+.tile--yellow:hover {
+  background-color: #F4F1BB;
+  filter: blur(10px);
+}
+.tile--green {
+  background-color: #6FBAB8;
+}
+.tile--green:hover {
+  background-color: #7DD1CF;
+  filter: blur(10px);
+}
+
+.tile--blue__selected {
+  background-color: #8DA2C1;
+  filter: blur(10px);
+}
+
+.tile--green__selected {
+  background-color: #7DD1CF;
+  filter: blur(10px);
+}
+
+.tile--red__selected {
+  background-color: #ED6A5A;
+  filter: blur(10px);
+}
+
+.tile--yellow__selected {
+  background-color: #F4F1BB;
+  filter: blur(10px);
+}
+
+
+
+
